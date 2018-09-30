@@ -1,3 +1,18 @@
+textarea,
+select,
+input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='checkbox']):not([type='radio']) {
+  background-color: white;
+  background-color: inherit;
+  color: black;
+  color: inherit;
+  border: 1px solid black;
+}
+
+#downloads-indicator-counter {
+  color: white;
+  color: inherit;
+}
+
 /* activity stream theme */
 .activity-stream {
   --newtab-background-color: #262a32 !important;
