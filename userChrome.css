@@ -129,6 +129,7 @@ toolbar {
   --toolbarbutton-inner-padding: 4px !important;
   --toolbarbutton-hover-background: rgba(0, 0, 0, 0.15) !important;
   --toolbarbutton-active-background: rgba(0, 0, 0, 0.15) !important;
+  --toolbar-bgcolor: #262a32 !important;
   padding-right: 5px !important;
 }
 
@@ -208,7 +209,9 @@ toolbar[brighttext] .toolbarbutton-1:hover {
   fill: #979a9f !important;
 }
 
-#identity-box > image {
+#identity-box > image,
+#tracking-protection-icon-box > image,
+#blocked-permissions-container > image {
   transform: scale(0.75);
 }
 

@@ -11,6 +11,7 @@ toolbar {
   --toolbarbutton-inner-padding: 4px !important;
   --toolbarbutton-hover-background: #{$background-color-hover} !important;
   --toolbarbutton-active-background: #{$background-color-hover} !important;
+  --toolbar-bgcolor: #{$secondary-background-color} !important;
   padding-right: 5px !important;
 }
 
@@ -92,7 +93,9 @@ toolbar[brighttext] .toolbarbutton-1:hover {
   fill: $text-color !important;
 }
 
-#identity-box > image {
+#identity-box > image,
+#tracking-protection-icon-box > image,
+#blocked-permissions-container > image {
   transform: scale(0.75);
 }
 
