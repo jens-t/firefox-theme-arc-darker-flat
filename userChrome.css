@@ -17,6 +17,7 @@
 /* tabs */
 #navigator-toolbox {
   --tabs-border-color: rgba(0, 0, 0, 0) !important;
+  background-color: #2f343e !important;
 }
 
 .tabbrowser-tab {
