@@ -15,3 +15,7 @@
 .browserContainer {
   background-color: $background-color !important;
 }
+
+#browser {
+  background-color: var(--chrome-secondary-background-color) !important;
+}

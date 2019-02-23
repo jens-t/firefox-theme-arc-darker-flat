@@ -1,0 +1,99 @@
+.sidebar-splitter {
+  width: 4px !important;
+  background-color: none !important;
+  border: 2px solid var(--chrome-secondary-background-color) !important;
+}
+
+#sidebar-box {
+  --sidebar-background-color: var(--chrome-background-color) !important;
+
+  border-top-right-radius: $border-radius;
+}
+
+#sidebar-switcher-target {
+  font-size: 0.813em !important;
+  border-radius: $border-radius !important;
+}
+
+#sidebar-icon {
+  transform: scale(0.75);
+}
+
+.close-icon:hover {
+  fill-opacity: 0.05 !important;
+}
+
+#sidebar-header {
+  border-bottom: none !important;
+  color: $text-color !important;
+}
+
+.sidebar-panel {
+  background-color: transparent !important;
+}
+
+.sidebar-panel #viewButton,
+#sidebar-header toolbarbutton {
+  &:hover,
+  &:active,
+  &:focus,
+  &.active {
+    background-color: transparent !important;
+    border-radius: $border-radius !important;
+    color: $text-color-hover !important;
+  }
+}
+
+
+#sidebar-search-container textbox {
+  -moz-appearance: none !important;
+  padding: 4px 6px !important;
+  background-color: $secondary-background-color !important;
+  border-radius: $border-radius;
+  font-size: 0.875em;
+  color: $text-color !important;
+
+  .textbox-search-sign {
+    margin-inline-start: 1px;
+    transform: scale(0.75);
+  }
+
+  .textbox-search-icons > * {
+    transform: scale(0.75);
+  }
+}
+
+#sidebar-search-container button {
+  color: $text-color !important;
+
+  .button-menu-dropmarker {
+    padding-left: 4px;
+  }
+}
+
+.sidebar-placesTree treechildren {
+  color: $text-color !important;
+
+  &::-moz-tree-cell,
+  &::-moz-tree-cell(focus),
+  &::-moz-tree-cell(selected),
+  &::-moz-tree-cell(current),
+  &::-moz-tree-cell(open) {
+    padding: 4px 0 !important;
+    margin: 0 8px !important;
+    width: calc(100% - 16px) !important;
+    height: 30px !important;
+    border-radius: $border-radius;
+  }
+
+  &::-moz-tree-cell(hover) {
+    background-color: $tertiary-background-color !important;
+    border-color: $tertiary-background-color !important;
+    margin: 2px 0;
+  }
+
+  &::-moz-tree-row {
+    background-color: transparent !important;
+    height: 30px !important;
+  }
+}
