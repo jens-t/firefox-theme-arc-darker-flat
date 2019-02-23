@@ -7,14 +7,16 @@ menupopup {
 }
 
 menupopup menupopup,
-#BMB_bookmarksPopup menupopup {
+#BMB_bookmarksPopup menupopup,
+#sidebarMenu-popup menupopup {
   transform: translateY(-5px);
   padding-top: 1px;
 }
 
 menupopup > .popup-internal-box,
 menupopup > * > .popup-internal-box,
-#BMB_bookmarksPopup .panel-arrowcontent {
+#BMB_bookmarksPopup .panel-arrowcontent,
+#sidebarMenu-popup .panel-arrowcontent {
   background-color: $background-color !important;
   margin: 5px 5px !important;
   box-shadow: $popup-box-shadow !important;
@@ -49,7 +51,8 @@ menuitem,
 menuitem[type="radio"],
 menuitem[type="checkbox"],
 menuitem[type="checked"],
-menucaption {
+menucaption,
+#sidebarMenu-popup toolbarbutton {
   -moz-appearance: none !important;
   color: $text-color !important;
   padding: 6px 5px !important;
@@ -62,10 +65,10 @@ menuitem .menu-iconic-icon {
 }
 
 menu[_moz-menuactive="true"]:not([disabled="true"]),
-menuitem[_moz-menuactive="true"]:not([disabled="true"]) {
+menuitem[_moz-menuactive="true"]:not([disabled="true"]),
+#sidebarMenu-popup toolbarbutton:hover {
   color: $text-color-hover !important;
   background: $background-color-hover !important;
-
 }
 
 menu[disabled="true"],
