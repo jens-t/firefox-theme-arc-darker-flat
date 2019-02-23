@@ -2,21 +2,40 @@
 
 menupopup {
   -moz-appearance: none !important;
+  background-color: transparent !important;
+  border: none !important;
 }
 
-menupopup menupopup {
+menupopup menupopup,
+#BMB_bookmarksPopup menupopup {
   transform: translateY(-5px);
   padding-top: 1px;
 }
 
 menupopup > .popup-internal-box,
-menupopup > * > .popup-internal-box {
+menupopup > * > .popup-internal-box,
+#BMB_bookmarksPopup .panel-arrowcontent {
   background-color: $background-color !important;
   margin: 5px 5px !important;
   box-shadow: $popup-box-shadow !important;
   border-radius: $border-radius !important;
   overflow: hidden;
   padding: 6px 0;
+}
+
+#BMB_bookmarksShowAll {
+  margin: 4px 0 0 !important;
+  background-color: $secondary-background-color !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+
+  .menu-accel-container {
+    display: none;
+  }
+}
+
+#BMB_bookmarksShowAllTop {
+  display: none;
 }
 
 menuseparator {

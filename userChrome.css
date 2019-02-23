@@ -443,21 +443,40 @@ panel[type="autocomplete-richlistbox"] {
 /* menupopup */
 menupopup {
   -moz-appearance: none !important;
+  background-color: transparent !important;
+  border: none !important;
 }
 
-menupopup menupopup {
+menupopup menupopup,
+#BMB_bookmarksPopup menupopup {
   transform: translateY(-5px);
   padding-top: 1px;
 }
 
 menupopup > .popup-internal-box,
-menupopup > * > .popup-internal-box {
+menupopup > * > .popup-internal-box,
+#BMB_bookmarksPopup .panel-arrowcontent {
   background-color: #2f343e !important;
   margin: 5px 5px !important;
   box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.25) !important;
   border-radius: 3px !important;
   overflow: hidden;
   padding: 6px 0;
+}
+
+#BMB_bookmarksShowAll {
+  margin: 4px 0 0 !important;
+  background-color: #262a32 !important;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+}
+
+#BMB_bookmarksShowAll .menu-accel-container {
+  display: none;
+}
+
+#BMB_bookmarksShowAllTop {
+  display: none;
 }
 
 menuseparator {

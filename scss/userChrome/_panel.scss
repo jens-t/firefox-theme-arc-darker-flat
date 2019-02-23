@@ -7,39 +7,43 @@ panelview {
   color: $text-color !important;
 }
 
-panel toolbarbutton:not(.panel-subview-footer) {
-  border-radius: $border-radius !important;
-  padding: 6px 12px !important;
-  margin: 0 6px !important;
-}
+panel {
 
-panel toolbarbutton:hover {
-  color: $text-color-hover !important;
-}
+  toolbarbutton:not(.panel-subview-footer) {
+    border-radius: $border-radius !important;
+    padding: 6px 12px !important;
+    margin: 0 6px !important;
+  }
 
-panel .subviewbutton[shortcut]::after {
-  font-size: 50%;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background-color: $info-background-color !important;
-  padding: 2px 4px;
-  border-radius: $border-radius !important;
-}
+  toolbarbutton:hover {
+    color: $text-color-hover !important;
+  }
 
-panel .subview-subheader {
-  font-weight: 300 !important;
-  text-transform: uppercase !important;
-  padding: 6px 12px !important;
-  margin: 0 6px !important;
-}
+  .subviewbutton[shortcut]::after {
+    font-size: 50%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: $info-background-color !important;
+    padding: 2px 4px;
+    border-radius: $border-radius !important;
+  }
 
-panel .panel-header > label {
-  text-transform: uppercase !important;
-}
+  .subview-subheader {
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    padding: 6px 12px !important;
+    margin: 0 6px !important;
+  }
 
-panel .identity-popup-connection-secure {
-  color: $text-color-success !important;
+  .panel-header > label {
+    text-transform: uppercase !important;
+  }
+
+  .identity-popup-connection-secure {
+    color: $text-color-success !important;
+  }
+
 }
 
 #identity-popup[connection^="secure"] .identity-popup-security-content {
