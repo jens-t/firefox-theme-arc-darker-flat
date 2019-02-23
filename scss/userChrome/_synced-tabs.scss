@@ -1,0 +1,51 @@
+body[role=application][lwt-sidebar] {
+  background-color: transparent !important;
+
+  .search-box {
+    -moz-appearance: none !important;
+    padding: 6px 6px !important;
+    background-color: $secondary-background-color !important;
+    border-radius: $border-radius;
+    font-size: 0.875em;
+    color: $text-color !important;
+
+    & > .textbox-input-box {
+      background-size: 9px 9px !important;
+    }
+
+    .textbox-search-clear {
+      width: 10px !important;
+      height: 10px !important;
+      background-size: 10px 10px !important;
+      margin-top: 2px !important;
+    }
+  }
+
+  .content-scrollable:-moz-focusring {
+    outline: none !important;
+  }
+
+  .item.tab {
+    color: $text-color !important;
+
+    .item-title-container {
+      margin: 2px 8px 2px 14px;
+      padding: 4px 0 !important;
+      width: calc(100% - 30px) !important;
+      border-radius: $border-radius;
+    }
+
+    &.selected .item-title-container,
+    .item-title-container:hover {
+      background-color: $tertiary-background-color !important;
+    }
+  }
+
+  .item.client {
+    color: $text-color !important;
+
+    &.selected .item-title-container {
+      background-color: transparent !important;
+    }
+  }
+}

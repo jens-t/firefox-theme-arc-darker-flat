@@ -699,3 +699,55 @@ findbar .findbar-container > .findbar-find-fast {
   background-color: transparent !important;
   height: 30px !important;
 }
+
+body[role=application][lwt-sidebar] {
+  background-color: transparent !important;
+}
+
+body[role=application][lwt-sidebar] .search-box {
+  -moz-appearance: none !important;
+  padding: 6px 6px !important;
+  background-color: #262a32 !important;
+  border-radius: 3px;
+  font-size: 0.875em;
+  color: #979a9f !important;
+}
+
+body[role=application][lwt-sidebar] .search-box > .textbox-input-box {
+  background-size: 9px 9px !important;
+}
+
+body[role=application][lwt-sidebar] .search-box .textbox-search-clear {
+  width: 10px !important;
+  height: 10px !important;
+  background-size: 10px 10px !important;
+  margin-top: 2px !important;
+}
+
+body[role=application][lwt-sidebar] .content-scrollable:-moz-focusring {
+  outline: none !important;
+}
+
+body[role=application][lwt-sidebar] .item.tab {
+  color: #979a9f !important;
+}
+
+body[role=application][lwt-sidebar] .item.tab .item-title-container {
+  margin: 2px 8px 2px 14px;
+  padding: 4px 0 !important;
+  width: calc(100% - 30px) !important;
+  border-radius: 3px;
+}
+
+body[role=application][lwt-sidebar] .item.tab.selected .item-title-container,
+body[role=application][lwt-sidebar] .item.tab .item-title-container:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+body[role=application][lwt-sidebar] .item.client {
+  color: #979a9f !important;
+}
+
+body[role=application][lwt-sidebar] .item.client.selected .item-title-container {
+  background-color: transparent !important;
+}
