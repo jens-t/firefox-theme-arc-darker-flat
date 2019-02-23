@@ -90,6 +90,12 @@
     }
   }
 
+  .fixed-search {
+    .search-wrapper {
+      background-color: rgba($secondary-background-color, 0.975) !important;
+    }
+  }
+
   // sections
   .collapsible-section {
     border-radius: 3px !important;

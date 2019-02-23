@@ -85,6 +85,10 @@ input:not(.urlbar-input):not(.textbox-input):not(.form-control):not([type='check
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
+.activity-stream .fixed-search .search-wrapper {
+  background-color: rgba(38, 42, 50, 0.975) !important;
+}
+
 .activity-stream .collapsible-section {
   border-radius: 3px !important;
 }
