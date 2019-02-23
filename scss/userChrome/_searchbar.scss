@@ -4,6 +4,7 @@ findbar {
 
   border-top: none !important;
   background-color: $background-color !important;
+  background-image: none !important;
   box-shadow: $popup-box-shadow !important;
   position: relative;
   padding: 4px 0 !important;
@@ -68,6 +69,10 @@ findbar {
       &::before {
         color: $accent-color !important;
       }
+    }
+
+    .toolbarbutton-text {
+      margin-left: 5px !important;
     }
   }
 
