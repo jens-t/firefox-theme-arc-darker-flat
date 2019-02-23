@@ -15,3 +15,8 @@ This is a theme based on CSS overrides in [userChrome.css & userContent.css](htt
 ![Screenshot 2](./screenshots/screenshot2.png)
 
 ![Screenshot 3](./screenshots/screenshot3.png)
+
+## Dark Theme Fix
+
+Choose a light GTK theme for GTK elements inside the webpage to fix dark theme issues:
+- in `about:config` add `widget.content.gtk-theme-override` with the value `Adwaita:light` or `Arc`
