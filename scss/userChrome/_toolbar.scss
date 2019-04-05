@@ -12,6 +12,7 @@ toolbar {
   --toolbarbutton-hover-background: #{$background-color-hover} !important;
   --toolbarbutton-active-background: #{$background-color-hover} !important;
   --toolbar-bgcolor: #{$secondary-background-color} !important;
+  --toolbar-bgimage: none !important;
   padding-right: 5px !important;
 }
 
@@ -37,6 +38,7 @@ toolbar[brighttext] .toolbarbutton-1:hover {
 #urlbar,
 .searchbar-textbox {
   border-color: $secondary-background-color !important;
+  background-color: $tertiary-background-color !important;
   box-shadow: none !important;
   font-size: $toolbar-fontsize !important;
   max-height: 24px;

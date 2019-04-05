@@ -1,15 +1,71 @@
 /* autocomplete */
 
-#PopupAutoCompleteRichResult {
+:root {
+  --autocomplete-popup-background: #{$secondary-background-color} !important;
+  --autocomplete-popup-border-color: none !important;
+}
+
+#urlbar-results {
+  --arrowpanel-dimmed: #{$background-color-hover} !important;
+
+  border: none !important;
   background-clip: padding-box !important;
 }
 
-#PopupAutoCompleteRichResult .search-one-offs {
+.urlbarView-row {
+  font-size: $toolbar-fontsize !important;
+  color: $text-color !important;
+
+  .urlbarView-type-icon,
+  .urlbarView-favicon {
+    transform: translateY(-1.5px) scale(0.8) !important;
+  }
+
+  .urlbarView-title-separator {
+    color: $u-reset-color;
+  }
+
+  .urlbarView-url:not([selected="true"]) {
+    font-weight: bold;
+    font-size: 90% !important;
+    color: $accent-color !important;
+  }
+
+  .urlbarView-url[selected="true"] {
+    color: $accent-background-text-color-secondary !important;
+  }
+
+  .urlbarView-action {
+    color: $text-color-disabled !important;
+  }
+}
+
+.urlbarView-row[selected] {
+  background-color: $accent-background-color !important;
+  color: $accent-background-text-color !important;
+  font-weight: bold !important;
+
+  .urlbarView-action {
+    color: $accent-background-text-color-secondary !important;
+  }
+}
+
+.urlbarView-row:hover {
+  color: $text-color-hover !important;
+  background-color: $background-color-hover !important;
+
+  .urlbarView-action {
+    color: $accent-color !important;
+    font-weight: bold;
+  }
+}
+
+/* search-one-offs */
+
+#urlbar-results .search-one-offs {
   -moz-appearance: none !important;
   background-color: $background-color !important;
   border-bottom: 2px solid darken($secondary-background-color, 2%) !important;
-  //height: 69px;
-  //overflow: hidden;
 
   &:has(.dummy) {
     height: 2px;
@@ -48,54 +104,5 @@
 
   .searchbar-engine-one-off-item.dummy {
     display: none !important;
-  }
-}
-
-panel[type="autocomplete"],
-panel[type="autocomplete-richlistbox"] {
-  background-color: $secondary-background-color !important;
-  border: none !important;
-}
-
-.autocomplete-richlistitem {
-  font-size: $toolbar-fontsize !important;
-  color: $text-color !important;
-
-  .ac-separator {
-    color: $u-reset-color;
-  }
-
-  .ac-url:not([selected="true"]) {
-    font-weight: bold;
-    font-size: 90% !important;
-    color: $accent-color !important;
-  }
-
-  .ac-url[selected="true"] {
-    color: $accent-background-text-color-secondary !important;
-  }
-
-  .ac-action {
-    color: $text-color-disabled !important;
-  }
-}
-
-.autocomplete-richlistitem:hover {
-  color: $text-color-hover !important;
-  background-color: $background-color-hover !important;
-
-  .ac-action {
-    color: $accent-color !important;
-    font-weight: bold;
-  }
-}
-
-.autocomplete-richlistitem[selected="true"] {
-  background-color: $accent-background-color !important;
-  color: $accent-background-text-color !important;
-  font-weight: bold !important;
-
-  .ac-action {
-    color: $accent-background-text-color-secondary !important;
   }
 }
