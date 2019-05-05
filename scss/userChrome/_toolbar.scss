@@ -4,6 +4,10 @@
   margin-left: 3px !important;
 }
 
+/* spacing for hidden titlebar */
+[tabsintitlebar="true"] #titlebar {
+  padding-top: 10px;
+}
 
 /* toolbar buttons */
 

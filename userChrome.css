@@ -22,6 +22,7 @@
 #navigator-toolbox {
   --tabs-border-color: rgba(0, 0, 0, 0) !important;
   background-color: #2f343e !important;
+  border-bottom: none !important;
 }
 
 .tabbrowser-tab {
@@ -127,6 +128,11 @@
 /* nav bar */
 #back-button {
   margin-left: 3px !important;
+}
+
+/* spacing for hidden titlebar */
+[tabsintitlebar="true"] #titlebar {
+  padding-top: 10px;
 }
 
 /* toolbar buttons */

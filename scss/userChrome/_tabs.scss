@@ -3,6 +3,7 @@
 #navigator-toolbox {
   --tabs-border-color: #{$u-reset-color};
   background-color: #{$background-color} !important;
+  border-bottom: none !important;
 }
 
 #tabbrowser-tabs:-moz-lwtheme {
