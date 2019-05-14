@@ -189,3 +189,7 @@
 .activity-stream .context-menu-item a .icon {
   transform: scale(0.8);
 }
+
+.cntp-iframe {
+  background-color: #262a32;
+}

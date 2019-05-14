@@ -243,6 +243,11 @@ toolbar[brighttext] .toolbarbutton-1:hover {
   fill: #979a9f !important;
 }
 
+#extension-icon[tooltiptext^="Geladen"],
+#identity-icon-label[value^="Erweiterung"] {
+  display: none;
+}
+
 [uidensity="compact"]:root .urlbar-icon {
   height: 26px !important;
   padding: 6px !important;
